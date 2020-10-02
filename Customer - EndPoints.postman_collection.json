@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "7e42a67d-75a6-4b81-b29f-099cd73c163e",
+		"name": "Customer - EndPoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/customers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "abbf5d41-101f-4e9a-8407-010cf7bd0248",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"first_name\" : \"Ramesh\",\r\n        \"last_name\" : \"Kumar\",\r\n        \"email\" : \"ramesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : [\r\n            \"9988776601\",\r\n            \"9988776601\"           ]\r\n    },\r\n    {\r\n        \"first_name\" : \"Rakesh\",\r\n        \"last_name\" : \"Sharma\",\r\n        \"email\" : \"rakesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : []\r\n    }\r\n\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customers - Retrive",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"first_name\" : \"Ramesh\",\r\n        \"last_name\" : \"Kumar\",\r\n        \"email\" : \"ramesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : [\r\n            \"9988776601\",\r\n            \"9988776601\"           ]\r\n    },\r\n    {\r\n        \"first_name\" : \"Rakesh\",\r\n        \"last_name\" : \"Sharma\",\r\n        \"email\" : \"rakesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : []\r\n    },"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customers/5 - Retrive By id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"first_name\" : \"Ramesh\",\r\n        \"last_name\" : \"Kumar\",\r\n        \"email\" : \"ramesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : [\r\n            \"9988776601\",\r\n            \"9988776601\"           ]\r\n    },\r\n    {\r\n        \"first_name\" : \"Rakesh\",\r\n        \"last_name\" : \"Sharma\",\r\n        \"email\" : \"rakesh@gmail.com\",\r\n        \"gender\" : \"MALE\",\r\n        \"mobiles\" : []\r\n    },"
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
