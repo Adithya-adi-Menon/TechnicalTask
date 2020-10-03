@@ -72,7 +72,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/customers/5 - Retrive By id",
+			"name": "http://localhost:8080/customers/1 - Retrive By id",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
